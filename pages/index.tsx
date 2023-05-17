@@ -66,8 +66,13 @@ const Index = () => {
   return (
     <Container>
       <div className='text-center mt-2'>
-        <h2>Terabox Dw</h2>
+        <h2>Terabox Downloader Revesery.com</h2>
       </div>
+
+      {/* Add the meta tag to block search engine crawling */}
+      <head>
+        <meta name="robots" content="noindex, nofollow" />
+      </head>
 
       <Form onSubmit={handleGetDetail}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -113,4 +118,4 @@ type KeyValue = {
   [key: string]: any;
 };
 
-export default Index
+export default Index;
